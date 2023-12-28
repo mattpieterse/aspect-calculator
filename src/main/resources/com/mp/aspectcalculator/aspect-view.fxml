@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mp.aspectcalculator.AspectController">
+   <children>
+      <VBox>
+         <children>
+            <Label text="Common">
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="4.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="aspectCombo" maxWidth="1.7976931348623157E308" prefWidth="360.0" promptText="Custom" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="12.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox fillHeight="false" VBox.vgrow="NEVER">
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Aspect (Width)">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField promptText="16" />
+               </children>
+               <padding>
+                  <Insets right="6.0" />
+               </padding>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Aspect (Height)">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField promptText="9" />
+               </children>
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="12.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fillHeight="false">
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Width in pixels">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField promptText="1280" />
+               </children>
+               <padding>
+                  <Insets right="6.0" />
+               </padding>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Height in pixels">
+                     <VBox.margin>
+                        <Insets bottom="6.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="4.0" />
+                     </padding>
+                  </Label>
+                  <TextField promptText="720" />
+               </children>
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+</VBox>
