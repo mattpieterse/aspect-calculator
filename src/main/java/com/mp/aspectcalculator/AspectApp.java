@@ -13,7 +13,7 @@ public class AspectApp extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader sceneFile = new FXMLLoader(AspectApp.class.getResource("aspect-view.fxml"));
-        Scene scene = new Scene(sceneFile.load(), 320, 240);
+        Scene scene = new Scene(sceneFile.load());
 
         stage.setTitle("Aspect Calculator");
         stage.setScene(scene);
